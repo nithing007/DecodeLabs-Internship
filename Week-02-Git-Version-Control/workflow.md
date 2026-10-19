@@ -24,3 +24,18 @@ Push local commits to GitHub and pull changes when needed.
 - Avoid committing passwords or API keys.
 - Keep commits focused on related changes.
 - Review pull requests before merging.
+
+## Practical Branch Workflow
+
+A feature branch keeps changes separate from the main branch
+until they are ready to merge.
+
+Example workflow:
+
+1. Create a feature branch.
+2. Make and review changes.
+3. Stage the relevant files.
+4. Commit with a descriptive message.
+5. Switch back to main.
+6. Merge the feature branch.
+7. Push the updated main branch to GitHub.
