@@ -23,11 +23,3 @@ history and collaborating on software projects.
 ## Learning Outcome
 Understand how to track changes, maintain commit history,
 and manage code using Git and GitHub.
-
-## How to Use
-
-1. Read `git-commands.md` to understand essential Git commands.
-2. Follow `workflow.md` to practise the Git development workflow.
-3. Create a feature branch and make a meaningful change.
-4. Commit your changes using clear, descriptive messages.
-5. Push your branch and open a Pull Request for review.
