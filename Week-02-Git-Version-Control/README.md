@@ -23,3 +23,18 @@ history and collaborating on software projects.
 ## Learning Outcome
 Understand how to track changes, maintain commit history,
 and manage code using Git and GitHub.
+
+## Setup and Installation
+
+No additional software dependencies are required to read this documentation. Git and a GitHub account are recommended for practising the commands.
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/nithing007/DecodeLabs-Internship.git
+cd DecodeLabs-Internship/Week-02-Git-Version-Control
+```
+
+## License
+
+No formal license has been specified for this repository. The documentation is provided as part of my DecodeLabs DevOps internship learning activities.
