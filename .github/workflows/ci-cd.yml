@@ -1,0 +1,35 @@
+
+name: DecodeLabs Week 3 CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - devops/week-03-ci-cd
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: Week-03-CI-CD-Pipeline
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build application
+        run: npm run build
+
+      - name: Run automated tests
+        run: npm test

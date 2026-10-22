@@ -1,0 +1,11 @@
+
+{
+  "name": "decodelabs-week3-cicd",
+  "version": "1.0.0",
+  "description": "Week 3 CI/CD pipeline project for DecodeLabs internship",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "node --check src/app.js",
+    "test": "node --test"
+  }
+}
