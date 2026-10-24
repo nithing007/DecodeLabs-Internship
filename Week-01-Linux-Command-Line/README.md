@@ -1,68 +1,62 @@
-# Week 1: Linux & Command Line Basics
+# Week 1: Linux and Command-Line Basics
 
-## 📌 Overview
+This directory contains the Week 1 practical work completed for the **DecodeLabs DevOps Internship**. The exercises introduce essential Linux shell commands for navigating the filesystem, managing files and directories, writing configuration and log files, and verifying command results.
 
-This folder contains my Week 1 DevOps internship work at **DecodeLabs**, focused on learning and practising fundamental Linux commands and command-line operations.
+## Objectives
 
-The objective was to understand Linux filesystem navigation, file and directory management, basic text operations, and permissions required for everyday DevOps tasks.
+- Navigate the Linux filesystem with `pwd`, `ls`, and `cd`.
+- Create directories and files with `mkdir` and `touch`.
+- Read and write file contents with `cat`, `echo`, and `tee`.
+- Move or rename files with `mv`.
+- Inspect file details and permissions with `ls -l` and `ls -ld`.
+- Use `sudo` when a command requires administrator privileges.
+- Build and verify a simple application configuration and log directory structure.
 
-## 🎯 Objectives
-
-- Understand the Linux filesystem hierarchy.
-- Navigate directories using basic Linux commands.
-- Create, read, move, and rename files.
-- Create application directories and configuration files.
-- Create and inspect server log files.
-- Understand basic file permissions and the use of `sudo`.
-- Verify directory structures and command outputs.
-
-## 🛠️ Environment
+## Environment
 
 | Component | Details |
 |---|---|
-| Operating System | Ubuntu on Windows Subsystem for Linux (WSL) |
+| Operating system | Ubuntu on Windows Subsystem for Linux (WSL) |
 | Shell | Bash |
-| Practice Location | `/app` |
-| Version Control | Git and GitHub |
+| Linux exercise path | `/app` |
+| Repository practice file | `practice/welcome.txt` |
+| Version control | Git and GitHub |
 
-## 📂 Project Structure
+> **Path note:** `/app` is the Linux filesystem location used in the exercises. `practice/` is a directory inside this repository. They are separate locations.
+
+## Repository Structure
 
 ```text
 Week-01-Linux-Command-Line/
 ├── README.md
-├── commands.md
-├── screenshots/
-│   ├── 01-linux-navigation.png
-│   ├── 02-basic-file-operations.png
-│   ├── 03-directory-creation.png
-│   ├── 04-config-file.png
-│   ├── 05-server-log.png
-│   ├── 06-directory-verification.png
-│   ├── 07-log-backup.png
-│   └── 08-final-verification.png
-└── practice/
-    ├── welcome.txt
-    └── ...
+├── command.md
+├── practice/
+│   └── welcome.txt
+└── screenshots/
+    ├── 01-linux-navigation.png
+    ├── 02-basic-file-operations.png
+    ├── 03-directory-creation.png
+    ├── 04-config-file.png
+    ├── 05-server-log.png
+    ├── 06-log-backup.png
+    └── 08-final-verification.png
 ```
 
-*Note: The screenshot names and practice files above are examples. Keep this structure and the filenames aligned with the files actually present in your repository.*
+## Practical Tasks Completed
 
-## 🧪 Tasks Completed
-
-- [x] Practised Linux directory navigation using `cd` and `pwd`.
-- [x] Listed files and directories using `ls` and `ls -l`.
-- [x] Created directories using `mkdir`.
-- [x] Created and inspected files using `touch` and `cat`.
-- [x] Wrote text to files using `echo` and `tee`.
-- [x] Created the `/app/logs` directory.
-- [x] Created the `/app/config.conf` configuration file.
-- [x] Created `/app/logs/server.log` with the text `Started`.
+- [x] Navigated directories and checked the current path with `cd` and `pwd`.
+- [x] Listed files and inspected file details using `ls`, `ls -l`, and `ls -ld`.
+- [x] Created directories and files using `mkdir` and `touch`.
+- [x] Read and wrote text with `cat`, `echo`, and `tee`.
+- [x] Created `/app/logs/`.
+- [x] Created `/app/config.conf`.
+- [x] Wrote `Started` to `/app/logs/server.log` and checked its contents.
 - [x] Renamed `server.log` to `server.bak`.
-- [x] Verified the final application directory structure.
+- [x] Verified the final directory structure and file contents.
 
-## 📁 Final Application Structure
+## Final Linux Exercise Structure
 
-The completed practical task produced the following directory structure:
+After completing the log-backup exercise, the expected structure is:
 
 ```text
 /app/
@@ -71,31 +65,44 @@ The completed practical task produced the following directory structure:
     └── server.bak
 ```
 
-The `server.bak` file contains:
+The backup file `/app/logs/server.bak` contains:
 
 ```text
 Started
 ```
 
-## 📚 Documentation
+## Screenshot Evidence
 
-For the complete list of commands, examples, and explanations, see:
+The screenshots below document the terminal exercises included in this repository.
 
-- [`commands.md`](commands.md) — Linux commands and hands-on exercises.
-- [`screenshots/`](screenshots/) — Terminal screenshots documenting the practical work.
+| Screenshot | Evidence |
+|---|---|
+| [01 — Linux navigation](screenshots/01-linux-navigation.png) | Basic filesystem navigation |
+| [02 — File operations](screenshots/02-basic-file-operations.png) | Creating, reading, or changing files |
+| [03 — Directory creation](screenshots/03-directory-creation.png) | Creating the exercise directories |
+| [04 — Configuration file](screenshots/04-config-file.png) | Creating `/app/config.conf` |
+| [05 — Server log](screenshots/05-server-log.png) | Creating and inspecting the server log |
+| [06 — Log backup](screenshots/06-log-backup.png) | Renaming the log to `server.bak` |
+| [08 — Final verification](screenshots/08-final-verification.png) | Verifying the completed structure |
 
-## 💡 Key Learnings
+## Documentation and Practice
 
-Through these exercises, I gained hands-on experience with Linux command-line operations, filesystem navigation, file management, basic permissions, and log-file handling.
+- **[Linux command reference](command.md):** command explanations, practical exercises, example commands, and expected output.
+- **[Practice file](practice/welcome.txt):** a small text file stored in the repository for command-line practice.
+- **[Screenshots](screenshots/):** terminal evidence for the completed exercises.
 
-These fundamentals provide a foundation for further DevOps learning, including shell scripting, application deployment, Docker, and CI/CD pipelines.
+To follow the work, open an Ubuntu/WSL terminal and work through the exercises in `command.md`. Commands that create files under `/app` may require `sudo`, depending on the permissions of your Linux environment. Review commands before running them, especially commands that overwrite or delete files.
 
-## ✅ Conclusion
+## Key Learnings
 
-Successfully completed the Week 1 Linux command-line practical exercises as part of my DecodeLabs DevOps internship and documented the commands and results for future reference.
+These exercises provided practical experience with Linux directory navigation, file and directory operations, file-content handling, permission inspection, administrator privileges, shell piping, and log-file backups. These skills form a foundation for later DevOps work involving shell scripts, application deployment, containers, and CI pipelines.
+
+## Conclusion
+
+Week 1's Linux command-line exercises are documented with a command reference and screenshots. The final exercise verifies the configuration file and the renamed log backup under `/app`.
 
 ---
 
 **Internship:** DecodeLabs DevOps Internship  
 **Week:** 01  
-**Topic:** Linux & Command Line Basics
+**Topic:** Linux and Command-Line Basics
