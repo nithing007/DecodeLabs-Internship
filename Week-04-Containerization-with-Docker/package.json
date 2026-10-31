@@ -1,0 +1,12 @@
+{
+  "name": "devops-week4-docker-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js application containerized with Docker for DecodeLabs DevOps Week 4",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
